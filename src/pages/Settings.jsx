@@ -89,7 +89,7 @@ const SettingsPage = () => {
             <Toggle checked={onboardingNotif} onChange={() => setOnboardingNotif(!onboardingNotif)} />
           </div>
         </div>
-         // 
+         /
         <div className="settings-section">
           <div className="section-header">
             <Shield size={20} className="section-icon" />
