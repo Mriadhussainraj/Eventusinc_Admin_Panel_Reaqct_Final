@@ -1,0 +1,274 @@
+.dashboard-page {
+  padding-bottom: 3rem;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+  padding-top: 0.5rem;
+}
+
+.dashboard-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0F1B2D;
+  margin-bottom: 4px;
+}
+
+.dashboard-subtitle {
+  color: #64748B;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 16px;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-info .value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0F1B2D;
+  margin-bottom: 2px;
+}
+
+.stat-info .label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748B;
+}
+
+.stat-trend {
+  display: flex;
+  align-items: center;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-left, .content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Weekly Revenue Chart */
+.main-chart {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-header {
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  display: flex;
+  gap: 1rem;
+  height: 250px;
+  padding-bottom: 1.5rem;
+}
+
+
+/* Recent Loads */
+.recent-loads {
+  padding: 1.5rem;
+}
+
+.load-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.load-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.load-item:last-child { border-bottom: none; }
+
+.load-route {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0F1B2D;
+  margin-bottom: 4px;
+}
+
+.load-id {
+  font-size: 0.8rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.load-meta {
+  text-align: right;
+}
+
+.load-price {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #0F1B2D;
+  margin-bottom: 4px;
+}
+
+/* Load Status Donut */
+.load-status { padding: 1.5rem; }
+
+.donut-chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.donut-legend {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legend-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.legend-label { font-size: 0.9rem; font-weight: 600; color: #475569; }
+.legend-value { font-size: 0.9rem; font-weight: 800; color: #0F1B2D; }
+
+/* Driver Status */
+.driver-status { padding: 1.5rem; }
+
+.driver-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.driver-item:last-child { border-bottom: none; }
+
+.driver-avatar-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #F8FAFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #64748B;
+  position: relative;
+  font-size: 0.85rem;
+}
+
+.status-dot.online {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  background-color: #22C55E;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.driver-info { flex: 1; }
+.driver-name { font-weight: 700; color: #0F1B2D; margin-bottom: 2px; }
+.driver-location { font-size: 0.8rem; color: #64748B; font-weight: 500; font-style: italic; }
+
+/* Alerts Section */
+.alerts-section {
+  margin-top: 1.5rem;
+}
+
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.alert-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+}
+
+.alert-card.danger { background-color: #FEF2F2; color: #DC2626; }
+.alert-card.warning { background-color: #FFFBEB; color: #D97706; }
+.alert-card.success { background-color: #F0FDF4; color: #15803D; }
+
+.alert-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-info h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 2px; color: inherit; }
+.alert-info p { font-size: 0.8rem; font-weight: 500; color: inherit; }
+
+.view-all-btn {
+  background: none;
+  border: none;
+  color: #C5973E;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 1200px) {
+  .main-grid { grid-template-columns: 1fr; }
+  .alerts-grid { grid-template-columns: 1fr; }
+}

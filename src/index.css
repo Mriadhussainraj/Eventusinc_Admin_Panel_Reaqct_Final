@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Brand Colors */
+  --primary: #C5973E;
+  --primary-hover: #AB8435;
+  --sidebar-bg: #0F172A;
+  --sidebar-active: #C5973E;
+  
+  /* Layout Colors */
+  --bg-main: #F8FAFC;
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+  
+  /* Text Colors */
+  --text-main: #111827;
+  --text-muted: #6B7280;
+  --text-light: #94A3B8;
+  
+  /* Status Colors */
+  --success: #22C55E;
+  --info: #3B82F6;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* Layout Constants */
+  --sidebar-width: 260px;
+  --topbar-height: 80px;
+  --radius-card: 16px;
+  --radius-button: 12px;
+  --radius-nav: 8px;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-wrapper {
+  padding: 2.5rem;
+  margin-top: var(--topbar-height);
+}
+
+/* Card Style based on reference */
+.premium-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}

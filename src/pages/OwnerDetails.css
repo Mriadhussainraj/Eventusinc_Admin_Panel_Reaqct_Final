@@ -1,0 +1,398 @@
+.owner-details-page {
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748B;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: color 0.15s;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.back-link:hover {
+  color: #0F1B2D;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.profile-avatar-large {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.profile-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F1B2D;
+  line-height: 1.2;
+}
+
+.profile-company {
+  font-size: 0.95rem;
+  color: #64748B;
+}
+
+.profile-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: #64748B;
+}
+
+.profile-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.profile-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #0F1B2D;
+  font-weight: 600;
+}
+
+.profile-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  color: #0F1B2D;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-outline:hover {
+  background-color: #F8FAFC;
+}
+
+.btn-danger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #EF4444;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2);
+}
+
+.btn-danger:hover {
+  background-color: #DC2626;
+  transform: translateY(-1px);
+}
+
+/* Stats Row */
+.od-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.od-stat-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.od-stat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.od-stat-val {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0F1B2D;
+}
+
+/* Info Grid */
+.info-2col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F1B2D;
+  margin-bottom: 1.25rem;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px dashed #F1F5F9;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.data-label {
+  font-size: 0.85rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.data-val {
+  font-size: 0.9rem;
+  color: #0F1B2D;
+  font-weight: 700;
+}
+
+.val-green {
+  color: #10B981;
+  font-weight: 700;
+}
+
+/* Sub-Table Drivers */
+.dr-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 0.5rem;
+}
+
+.dr-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px dashed #F1F5F9;
+}
+
+.dr-row:last-child {
+  border-bottom: none;
+}
+
+.dr-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dr-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #F1F5F9;
+  color: #0F1B2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dr-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0F1B2D;
+}
+
+.dr-num {
+  font-size: 0.9rem;
+  color: #64748B;
+}
+
+/* Earnings Box horizontally mapped */
+.earn-block-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.earn-box {
+  background-color: #F8FAFC;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.earn-month {
+  font-size: 0.8rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.earn-val {
+  font-size: 1.1rem;
+  color: #0F1B2D;
+  font-weight: 800;
+}
+
+/* Document Uploads */
+.doc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px dashed #E2E8F0;
+}
+
+.doc-row:last-child {
+  border-bottom: none;
+}
+
+.doc-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.doc-icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #F8FAFC;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748B;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.doc-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0F1B2D;
+}
+
+.doc-date {
+  font-size: 0.75rem;
+  color: #94A3B8;
+}
+
+.doc-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.doc-status {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #10B981;
+}
+
+.doc-dl-btn {
+  background: none;
+  border: none;
+  color: #94A3B8;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-dl-btn:hover {
+  color: #0F1B2D;
+}

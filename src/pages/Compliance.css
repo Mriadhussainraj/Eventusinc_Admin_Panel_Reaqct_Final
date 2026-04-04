@@ -1,0 +1,242 @@
+.compliance-page {
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.compliance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.compliance-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.compliance-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0F1B2D;
+}
+
+.compliance-subtitle {
+  font-size: 0.95rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.btn-export {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0F1B2D;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-export:hover {
+  background-color: #F8FAFC;
+}
+
+/* Compliance Summary Cards */
+.compliance-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.comp-stat-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comp-stat-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-icon-success { background-color: #F0FDF4; color: #10B981; border: 1px solid #DCFCE7; }
+.comp-icon-warning { background-color: #FFF7ED; color: #F97316; border: 1px solid #FFEDD5; }
+.comp-icon-danger { background-color: #FEF2F2; color: #EF4444; border: 1px solid #FEE2E2; }
+
+.comp-stat-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.comp-stat-val {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0F1B2D;
+}
+
+.comp-stat-label {
+  font-size: 0.9rem;
+  color: #64748B;
+  font-weight: 600;
+}
+
+/* Filter Bar */
+.compliance-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.comp-search-box {
+  flex: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.comp-search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #0F1B2D;
+  background: transparent;
+}
+
+.comp-filter-select {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  background-color: #FFFFFF;
+  color: #0F1B2D;
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-width: 160px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Compliance Table */
+.compliance-table-wrapper {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.comp-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1.2fr;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.comp-header {
+  background-color: #FCFDFE;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comp-row:hover {
+  background-color: #F8FAFC;
+}
+
+.comp-driver-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.comp-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0F1B2D;
+  font-size: 0.9rem;
+}
+
+.comp-name-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.comp-name {
+  font-weight: 700;
+  color: #0F1B2D;
+  font-size: 0.95rem;
+}
+
+.comp-id {
+  font-size: 0.8rem;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+/* Status Dots */
+.status-dot-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compliance-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-success { background-color: #10B981; box-shadow: 0 0 0 4px #ECFDF5; }
+.dot-warning { background-color: #F59E0B; box-shadow: 0 0 0 4px #FFF7ED; }
+.dot-danger { background-color: #EF4444; box-shadow: 0 0 0 4px #FEF2F2; }
+
+/* Overall Badge */
+.status-pill {
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+}
+
+.pill-compliant { background-color: #DCFCE7; color: #16A34A; }
+.pill-warning { background-color: #FEF3C7; color: #D97706; }
+.pill-danger { background-color: #FEE2E2; color: #DC2626; }
+
+@media (max-width: 1100px) {
+  .comp-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 0.85rem;
+  }
+}

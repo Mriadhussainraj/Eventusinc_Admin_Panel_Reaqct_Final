@@ -1,0 +1,266 @@
+.dispatch-page {
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+.dispatch-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 0.85rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+  color: #94A3B8;
+  margin-right: 0.75rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #0F1B2D;
+}
+
+.search-input::placeholder {
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+/* Status Dropdown */
+.status-dropdown-wrapper {
+  position: relative;
+}
+
+.status-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0F1B2D;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 130px;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.status-btn:hover {
+  background-color: #F8FAFC;
+}
+
+.status-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background-color: #4B5563; /* Dark gray to match Figma popup */
+  border-radius: 12px;
+  min-width: 180px;
+  padding: 0.5rem;
+  z-index: 50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.status-menu-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  background: none;
+  border: none;
+  color: #F3F4F6;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: left;
+  transition: background 0.1s;
+}
+
+.status-menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.status-menu-btn .check-icon {
+  margin-right: 8px;
+  visibility: hidden;
+}
+
+.status-menu-btn.selected .check-icon {
+  visibility: visible;
+  color: #FFFFFF;
+}
+
+.status-menu-btn.selected {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* Dispatch Table */
+.dispatch-table-container {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.dispatch-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1.2fr 1.5fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.dispatch-header {
+  background-color: #FCFDFE;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: capitalize;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 1.25rem 1.5rem;
+}
+
+.dispatch-row {
+  transition: background-color 0.2s ease;
+}
+
+.dispatch-row:hover {
+  background-color: #F8FAFC;
+}
+
+.load-id {
+  font-weight: 700;
+  color: #0F1B2D;
+  font-size: 0.95rem;
+}
+
+.route-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.route-origin {
+  font-weight: 700;
+  color: #0F1B2D;
+  font-size: 0.9rem;
+}
+
+.route-destination {
+  font-weight: 500;
+  color: #64748B;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rate-cell {
+  font-weight: 800;
+  color: #0F1B2D;
+  font-size: 0.95rem;
+}
+
+.text-gray {
+  color: #64748B;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.driver-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.driver-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #D9A05B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.driver-name {
+  font-weight: 700;
+  color: #0F1B2D;
+  font-size: 0.9rem;
+}
+
+.unassigned {
+  color: #94A3B8;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn.view {
+  background-color: #F8FAFC;
+  color: #0F1B2D;
+}
+
+.action-btn.view:hover {
+  background-color: #E2E8F0;
+}
+
+.action-btn.assign {
+  background-color: #FFF7ED;
+  color: #C5973E;
+}
+
+.action-btn.assign:hover {
+  background-color: #FFEDD5;
+}
+
+@media (max-width: 1200px) {
+  .dispatch-grid {
+    grid-template-columns: 1fr 1.5fr 1fr 1.2fr 1fr;
+  }
+  .distance-cell, .equipment-cell, .rate-cell {
+    display: none;
+  }
+}
